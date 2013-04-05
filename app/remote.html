@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.png" type="image/png" />
+
+        <meta property="og:title" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:description" content=""/>
+        
+        <!-- build:css styles/all.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <script src="components/modernizr/modernizr.js"></script>
+
+        <script type="text/javascript">
+
+            var SOCKET_HOST = window.location.host.indexOf('local') != -1 ? 'localhost:9001':'hackathon-onf.jit.su';
+
+            window.addEventListener("load",function() {
+                setTimeout(function(){
+                    window.scrollTo(0, 0);
+                }, 0);
+            });
+
+        </script>
+        <style>
+            body { min-height: 480px; }
+        </style>
+
+    </head>
+    <body class="remote">
+
+        <div id="ask" style="display:none;">
+
+            <div class="top">
+                <span class="logo"></span>
+            </div>
+
+            <div class="form">
+
+                <h1>Télécommande</h1>
+                <form action="#">
+                    <p>Entrez le code de 4 chiffres:</p>
+                    <input type="text" name="id" placeholder="0000" maxlength="4" />
+                    <button></button>
+                </form>
+
+            </div>
+        </div>
+
+        <div id="remote" style="display:none;">
+
+            <div class="top">
+                <span class="logo"></span>
+            </div>
+
+            <div class="title">
+                <a href="#" class="info"></a>
+                <h1>Title</h1>
+            </div>
+
+            <div class="timeline">
+                <div class="progress"><div class="bar"></div></div>
+                <div class="time">
+                    <span class="current">00:00</span> / <span class="duration">00:00</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <a href="#" class="play"></a>
+                <a href="#" class="pause" style="display:none;"></a>
+            </div>
+
+            <div class="volume">
+                <a href="#" class="mute"></a>
+                <a href="#" class="unmute"></a>
+                <div class="progress"><div class="bar"></div></div>
+            </div>
+
+            <div class="related">
+                <h2>Films reliés</h2>
+                <ul>
+                    <li><img src="http://2013.elektramontreal.ca/files/images/2013-03-28/5154a6d705f12-300x190-quadrant(C).jpg" /></li>
+                    <li><img src="http://2013.elektramontreal.ca/files/images/2013-03-28/5154a6d705f12-300x190-quadrant(C).jpg" /></li>
+                    <li><img src="http://2013.elektramontreal.ca/files/images/2013-03-28/5154a6d705f12-300x190-quadrant(C).jpg" /></li>
+                    <li><img src="http://2013.elektramontreal.ca/files/images/2013-03-28/5154a6d705f12-300x190-quadrant(C).jpg" /></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="info" style="display:none;">
+            <div class="top">
+                <span class="logo"></span>
+            </div>
+
+            <div class="title">
+                <a href="#" class="close"></a>
+                <h1>Title</h1>
+            </div>
+
+            <div class="image">
+
+            </div>
+
+            <div class="infos">
+
+                <div class="row">
+                    <label>Description:</label>
+                    <div class="value description">
+                        Court métrage de fiction qui projette dans toutes ses nuances la condition de waitress. Être fictif à qui 24 femmes prêtent leur visage, Françoise Durocher possède à la fois les traits de la petite serveuse, de l'hôtesse et de la barmaid. Ensemble, elles donnent, selon l'auteur, une idée de la fille de table québécoise qui, tous les jours, vous sert avec le sourire malgré les ennuis inhérents à son métier et les petits drames à peu près quotidiens qu’elle affronte. Ce film est la première expérience cinématographique du tandem Brassard-Tremblay.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Réalisateur:</label>
+                    <div class="value director"></div>
+                </div>
+
+                <div class="row">
+                    <label>Année:</label>
+                    <div class="value year"></div>
+                </div>
+
+                <div class="row">
+                    <label>Durée:</label>
+                    <div class="value duration"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- build:js scripts/app.js -->
+        <script data-main="scripts/main.remote" src="components/requirejs/require.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

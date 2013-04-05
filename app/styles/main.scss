@@ -1,0 +1,481 @@
+
+
+
+body.couch {
+
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#000;
+
+	* {
+		margin:0;
+		padding:0;
+		outline:none;
+		border:none;
+	}
+
+	#player {
+		width:100%;
+		height:100%;
+		position:relative;
+		top:0px;
+		left:0px;
+		z-index:1;
+	}
+
+	a.remote {
+		position:absolute;
+		z-index:2;
+		bottom:20px;
+		right:300px;
+		background:#333;
+		color:#999;
+		padding:5px;
+		font-size:14px;
+		text-decoration:none;
+
+		&:hover {
+			color:#fff;
+		}
+	}
+
+	#remote {
+
+		width:650px;
+		height:350px;
+		background:#fff;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-175px;
+		margin-left:-325px;
+		z-index:2;
+
+		h1 {
+			font-size:20px;
+			text-align:center;
+			margin-top:10px;
+		}
+
+		.close {
+			position:absolute;
+			top:10px;
+			right:10px;
+			color:#000;
+			font-weight:bold;
+			text-decoration:none;
+		}
+
+		.info {
+			width:250px;
+			position:absolute;
+			left:20px;
+			top:50px;
+
+			.url, .id {
+				font-size:20px;
+				font-weight:bold;
+			}
+
+			.url {
+				margin-bottom:20px;
+			}
+		}
+
+		.side {
+			width:45%;
+		}
+
+		.or {
+			width:50px;
+			text-align:center;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-left:-25px;
+			margin-top:-12px;
+			font-weight:bold;
+		}
+
+		.qr {
+			position:absolute;
+			right:20px;
+			top:50px;
+
+			.image {
+				width:256px;
+				height:256px;
+			}
+		}
+	}
+
+}
+
+body.remote {
+
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+
+	* {
+		margin:0;
+		padding:0;
+		outline:none;
+		border:none;
+		list-style:none;
+	}
+
+	#ask {
+
+		/*position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;*/
+		position:relative;
+		padding-bottom:20px;
+
+		.top {
+			border-bottom:solid 1px #000;
+			padding:5px;
+			position:relative;
+
+			.logo {
+				display:block;
+				width:75px;
+				height:36px;
+				background:url(../images/remote/logo.png) no-repeat top left;
+				background-size:100% 100%;
+			}
+		}
+
+		.form {
+
+
+			h1 {
+				text-align:center;
+				margin:40px 0;
+			}
+
+			p {
+				text-align:center;
+			}
+
+			input {
+				width:200px;
+				font-size:50px;
+				border:solid 1px #999;
+				padding:10px;
+				margin:0 auto;
+				display:block;
+				margin-top:5px;
+				text-align:center;
+			}
+
+			button {
+				display:block;
+				width:60px;
+				height:60px;
+				background:url(../images/remote/go.png) no-repeat top left;
+				background-size:100% 100%;
+				margin:0 auto;
+				margin-top:40px;
+				cursor:pointer;
+
+				&:hover {
+					background-image:url(../images/remote/go-over.png);
+				}
+			}
+		}
+
+	}
+
+	#remote {
+
+		/*position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;*/
+		position:relative;
+
+		.top {
+			border-bottom:solid 1px #000;
+			padding:5px;
+			position:relative;
+
+			.logo {
+				display:block;
+				width:75px;
+				height:36px;
+				background:url(../images/remote/logo.png) no-repeat top left;
+				background-size:100% 100%;
+			}
+		}	
+
+		.title {
+
+			width:100%;
+			position:relative;
+			min-height:32px;
+
+			a.info {
+				display:block;
+				width:32px;
+				height:32px;
+				position:absolute;
+				top:0px;
+				right:10px;
+				background:url(../images/remote/info.png) no-repeat top left;
+				background-size:100% 100%;
+
+				&:hover {
+					background-image:url(../images/remote/info-over.png);
+				}
+			}
+
+			h1 {
+				margin-top:10px;
+				margin-left:10px;
+				width:90%;
+				font-size:20px;
+			}
+
+		}
+
+		.progress {
+			height:20px;
+			border:solid 1px #000;
+			position:relative;
+
+			.bar {
+				position:absolute;
+				top:0px;
+				left:0px;
+				background:#000;
+				width:0%;
+				height:100%;
+			}
+		}
+
+		.timeline {
+
+			margin: 20px 10px;
+
+
+
+			.time {
+				text-align:right;
+				margin-top:5px;
+			}
+
+		}
+
+		.control {
+
+			margin:30px 0;
+
+			a {
+				display:block;
+				width:81px;
+				height:81px;
+				margin:0 auto;
+
+				&.play {
+					background:url(../images/remote/play.png) no-repeat top left;
+					background-size:100% 100%;
+
+					&:hover {
+						background-image:url(../images/remote/play-over.png);
+					}
+				}
+
+				&.pause {
+					background:url(../images/remote/pause.png) no-repeat top left;
+					background-size:100% 100%;
+
+					&:hover {
+						background-image:url(../images/remote/pause-over.png);
+					}
+				}
+			}
+
+		}
+
+		.volume {
+
+			position:relative;
+			margin: 20px 60px;
+			height:20px;
+
+			a {
+				position:absolute;
+				top:0px;
+			}
+
+			a.mute {
+				left:0px;
+				display:block;
+				width:17px;
+				height:17px;
+				background:url(../images/remote/speaker-small.png) no-repeat top left;
+				background-size:100% 100%;
+				top:1px;
+			}
+
+			a.unmute {
+				display:block;
+				width:18px;
+				height:30px;
+				background:url(../images/remote/speaker-big.png) no-repeat top left;
+				background-size:100% 100%;
+				right:0px;
+				top:-5px;
+			}
+
+			.progress {
+				width:75%;
+				margin:0 auto;
+				height:10px;
+				position:relative;
+				top:4px;
+			}
+
+		}
+
+		.related {
+			/*position:absolute;
+			bottom:0px;
+			left:0px;
+			width:100%;*/
+			width:100%;
+			position:relative;
+			margin-top:40px;
+			border-top:solid 1px #000;
+			overflow:hidden;
+			overflow-x:auto;
+			height:120px;
+
+			h2 {
+				font-size:16px;
+				margin-top:5px;
+				margin-left:10px;
+				height:16px;
+			}
+
+			ul {
+				padding:0 10px;
+				position:relative;
+
+				li {
+
+					position:relative;
+					height:100%;
+					margin-top:10px;
+					padding-right:10px;
+					float:left;
+
+					img {
+						height:80px;
+					}
+				}
+
+			}
+		}
+	}
+
+
+	#info {
+
+		/*position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;*/
+		position:relative;
+		padding-bottom:20px;
+
+		.top {
+			border-bottom:solid 1px #000;
+			padding:5px;
+			position:relative;
+
+			.logo {
+				display:block;
+				width:75px;
+				height:36px;
+				background:url(../images/remote/logo.png) no-repeat top left;
+				background-size:100% 100%;
+			}
+		}	
+
+		.title {
+
+			width:100%;
+			position:relative;
+			min-height:32px;
+
+			a.close {
+				display:block;
+				width:32px;
+				height:32px;
+				position:absolute;
+				top:0px;
+				right:10px;
+				background:url(../images/remote/close.png) no-repeat top left;
+				background-size:100% 100%;
+
+				&:hover {
+					background-image:url(../images/remote/close-over.png);
+				}
+			}
+
+			h1 {
+				margin-top:10px;
+				margin-left:10px;
+				width:90%;
+				font-size:20px;
+			}
+
+		}
+
+		.image {
+			margin-top:20px;
+			margin-left:10px;
+			margin-right:20px;
+
+			img {
+				display:block;
+				width:100%;
+			}
+		}
+
+		.infos {
+			margin-top:20px;
+			margin-left:10px;
+			margin-right:20px;
+
+			.row {
+				margin-bottom:10px;
+
+				label {
+					font-weight:bold;
+					font-size:16px;
+					text-transform:uppercase;
+				}
+				.value {
+					font-size:14px;
+					text-align:justify;
+				}
+
+				.description {
+					margin-bottom:20px;
+				}
+			}
+		}
+
+	}
+
+
+}

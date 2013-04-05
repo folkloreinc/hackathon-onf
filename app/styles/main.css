@@ -1,0 +1,451 @@
+/* line 4, main.scss */
+body.couch {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+}
+/* line 11, main.scss */
+body.couch * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+/* line 18, main.scss */
+body.couch #player {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+/* line 27, main.scss */
+body.couch a.remote {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  right: 300px;
+  background: #333;
+  color: #999;
+  padding: 5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+/* line 38, main.scss */
+body.couch a.remote:hover {
+  color: #fff;
+}
+/* line 43, main.scss */
+body.couch #remote {
+  width: 650px;
+  height: 350px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -325px;
+  z-index: 2;
+}
+/* line 55, main.scss */
+body.couch #remote h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* line 61, main.scss */
+body.couch #remote .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 70, main.scss */
+body.couch #remote .info {
+  width: 250px;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+/* line 76, main.scss */
+body.couch #remote .info .url, body.couch #remote .info .id {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 81, main.scss */
+body.couch #remote .info .url {
+  margin-bottom: 20px;
+}
+/* line 86, main.scss */
+body.couch #remote .side {
+  width: 45%;
+}
+/* line 90, main.scss */
+body.couch #remote .or {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -12px;
+  font-weight: bold;
+}
+/* line 101, main.scss */
+body.couch #remote .qr {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+/* line 106, main.scss */
+body.couch #remote .qr .image {
+  width: 256px;
+  height: 256px;
+}
+
+/* line 115, main.scss */
+body.remote {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 121, main.scss */
+body.remote * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style: none;
+}
+/* line 129, main.scss */
+body.remote #ask {
+  /*position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;*/
+  position: relative;
+  padding-bottom: 20px;
+}
+/* line 139, main.scss */
+body.remote #ask .top {
+  border-bottom: solid 1px #000;
+  padding: 5px;
+  position: relative;
+}
+/* line 144, main.scss */
+body.remote #ask .top .logo {
+  display: block;
+  width: 75px;
+  height: 36px;
+  background: url(../images/remote/logo.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 156, main.scss */
+body.remote #ask .form h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+/* line 161, main.scss */
+body.remote #ask .form p {
+  text-align: center;
+}
+/* line 165, main.scss */
+body.remote #ask .form input {
+  width: 200px;
+  font-size: 50px;
+  border: solid 1px #999;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+/* line 176, main.scss */
+body.remote #ask .form button {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/remote/go.png) no-repeat top left;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  cursor: pointer;
+}
+/* line 186, main.scss */
+body.remote #ask .form button:hover {
+  background-image: url(../images/remote/go-over.png);
+}
+/* line 194, main.scss */
+body.remote #remote {
+  /*position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;*/
+  position: relative;
+}
+/* line 203, main.scss */
+body.remote #remote .top {
+  border-bottom: solid 1px #000;
+  padding: 5px;
+  position: relative;
+}
+/* line 208, main.scss */
+body.remote #remote .top .logo {
+  display: block;
+  width: 75px;
+  height: 36px;
+  background: url(../images/remote/logo.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 217, main.scss */
+body.remote #remote .title {
+  width: 100%;
+  position: relative;
+  min-height: 32px;
+}
+/* line 223, main.scss */
+body.remote #remote .title a.info {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: url(../images/remote/info.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 233, main.scss */
+body.remote #remote .title a.info:hover {
+  background-image: url(../images/remote/info-over.png);
+}
+/* line 238, main.scss */
+body.remote #remote .title h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 90%;
+  font-size: 20px;
+}
+/* line 247, main.scss */
+body.remote #remote .progress {
+  height: 20px;
+  border: solid 1px #000;
+  position: relative;
+}
+/* line 252, main.scss */
+body.remote #remote .progress .bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  width: 0%;
+  height: 100%;
+}
+/* line 262, main.scss */
+body.remote #remote .timeline {
+  margin: 20px 10px;
+}
+/* line 268, main.scss */
+body.remote #remote .timeline .time {
+  text-align: right;
+  margin-top: 5px;
+}
+/* line 275, main.scss */
+body.remote #remote .control {
+  margin: 30px 0;
+}
+/* line 279, main.scss */
+body.remote #remote .control a {
+  display: block;
+  width: 81px;
+  height: 81px;
+  margin: 0 auto;
+}
+/* line 285, main.scss */
+body.remote #remote .control a.play {
+  background: url(../images/remote/play.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 289, main.scss */
+body.remote #remote .control a.play:hover {
+  background-image: url(../images/remote/play-over.png);
+}
+/* line 294, main.scss */
+body.remote #remote .control a.pause {
+  background: url(../images/remote/pause.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 298, main.scss */
+body.remote #remote .control a.pause:hover {
+  background-image: url(../images/remote/pause-over.png);
+}
+/* line 306, main.scss */
+body.remote #remote .volume {
+  position: relative;
+  margin: 20px 60px;
+  height: 20px;
+}
+/* line 312, main.scss */
+body.remote #remote .volume a {
+  position: absolute;
+  top: 0px;
+}
+/* line 317, main.scss */
+body.remote #remote .volume a.mute {
+  left: 0px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url(../images/remote/speaker-small.png) no-repeat top left;
+  background-size: 100% 100%;
+  top: 1px;
+}
+/* line 327, main.scss */
+body.remote #remote .volume a.unmute {
+  display: block;
+  width: 18px;
+  height: 30px;
+  background: url(../images/remote/speaker-big.png) no-repeat top left;
+  background-size: 100% 100%;
+  right: 0px;
+  top: -5px;
+}
+/* line 337, main.scss */
+body.remote #remote .volume .progress {
+  width: 75%;
+  margin: 0 auto;
+  height: 10px;
+  position: relative;
+  top: 4px;
+}
+/* line 347, main.scss */
+body.remote #remote .related {
+  /*position:absolute;
+  bottom:0px;
+  left:0px;
+  width:100%;*/
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  border-top: solid 1px #000;
+  overflow: hidden;
+  overflow-x: auto;
+  height: 120px;
+}
+/* line 360, main.scss */
+body.remote #remote .related h2 {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 16px;
+}
+/* line 367, main.scss */
+body.remote #remote .related ul {
+  padding: 0 10px;
+  position: relative;
+}
+/* line 371, main.scss */
+body.remote #remote .related ul li {
+  position: relative;
+  height: 100%;
+  margin-top: 10px;
+  padding-right: 10px;
+  float: left;
+}
+/* line 379, main.scss */
+body.remote #remote .related ul li img {
+  height: 80px;
+}
+/* line 389, main.scss */
+body.remote #info {
+  /*position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;*/
+  position: relative;
+  padding-bottom: 20px;
+}
+/* line 399, main.scss */
+body.remote #info .top {
+  border-bottom: solid 1px #000;
+  padding: 5px;
+  position: relative;
+}
+/* line 404, main.scss */
+body.remote #info .top .logo {
+  display: block;
+  width: 75px;
+  height: 36px;
+  background: url(../images/remote/logo.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 413, main.scss */
+body.remote #info .title {
+  width: 100%;
+  position: relative;
+  min-height: 32px;
+}
+/* line 419, main.scss */
+body.remote #info .title a.close {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: url(../images/remote/close.png) no-repeat top left;
+  background-size: 100% 100%;
+}
+/* line 429, main.scss */
+body.remote #info .title a.close:hover {
+  background-image: url(../images/remote/close-over.png);
+}
+/* line 434, main.scss */
+body.remote #info .title h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 90%;
+  font-size: 20px;
+}
+/* line 443, main.scss */
+body.remote #info .image {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+/* line 448, main.scss */
+body.remote #info .image img {
+  display: block;
+  width: 100%;
+}
+/* line 454, main.scss */
+body.remote #info .infos {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+/* line 459, main.scss */
+body.remote #info .infos .row {
+  margin-bottom: 10px;
+}
+/* line 462, main.scss */
+body.remote #info .infos .row label {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* line 467, main.scss */
+body.remote #info .infos .row .value {
+  font-size: 14px;
+  text-align: justify;
+}
+/* line 472, main.scss */
+body.remote #info .infos .row .description {
+  margin-bottom: 20px;
+}
